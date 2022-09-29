@@ -1,2 +1,5 @@
-^yourpkg\.Rproj$
+^fossil\.Rproj$
 ^\.Rproj\.user$
+^data-raw$
+^natural-resources.csv
+^LICENSE\.md$
