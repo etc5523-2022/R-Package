@@ -12,8 +12,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   warning = FALSE,
-  message = FALSE,
-  echo = FALSE
+  message = FALSE
 )
 ```
 
@@ -44,7 +43,7 @@ different countries from 1973 to 2021.
 The data set can be found [HERE](https://ourworldindata.org/explorers/natural-resources)
 The user can use *resoursecs_data()* function to access the dataset.
 
-```{r}
+```{r,echo=FALSE}
 glimpse(resources_data)
 ```
 
@@ -55,7 +54,7 @@ This data is a subset of the above mentioned data and has some columns pivited
 to help create the shiny app.
 The user can use *resource_data2()* function to access the dataset.
 
-```{r}
+```{r, echo=FALSE}
 glimpse(fossil::resource_data2)
 ```
 
