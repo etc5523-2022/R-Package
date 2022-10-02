@@ -3,3 +3,4 @@
 ^data-raw$
 ^natural-resources.csv
 ^LICENSE\.md$
+^README\.Rmd$
