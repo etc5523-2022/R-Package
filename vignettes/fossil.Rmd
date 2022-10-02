@@ -1,0 +1,125 @@
+---
+title: "fossil"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{fossil}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  warning = FALSE,
+  message = FALSE,
+  echo = FALSE
+)
+```
+
+```{r setup}
+library(fossil)
+library(tidyverse)
+```
+
+
+# DESCRIPTION
+
+This package can help the user gain information about the fossil fuels mainly 
+*oil*, *natural gas* and *coal*. We can get information about the production, 
+consumption , total reserves of the above mentioned fossil fuels for different 
+countries and of different years. The package also has functions that lets the 
+used find the average production, and also lets the user find about the top 10
+producers of a fossil fuel for a particular year. The package also contains 
+functions to launch the shiny apps which helps the user interactively use the data.
+
+
+
+
+# DATA: resources_data
+
+This dataset contains information about fossil fuel production, consumption,
+population of the country,year and the total reserves of natural resources of 
+different countries from 1973 to 2021.
+The data set can be found [HERE](https://ourworldindata.org/explorers/natural-resources)
+The user can use *resoursecs_data()* function to access the dataset.
+
+```{r}
+glimpse(resources_data)
+```
+
+
+# DATA: resource_data2 
+
+This data is a subset of the above mentioned data and has some columns pivited 
+to help create the shiny app.
+The user can use *resource_data2()* function to access the dataset.
+
+```{r}
+glimpse(fossil::resource_data2)
+```
+
+# FUNCTIONS:
+
+The functions in this package are as follows:
+
+- resources_data() : This function can be called to display the main dataset that 
+is used to create this package.
+
+- resource_data2() : This function is used to display the modified version of the 
+dataset that is used to create the shiny app.
+
+- oil_prod : This function takes year as an input and returns the average oil 
+produced in that year by all the countries combined. 
+
+```{r}
+oil_prod(2000)
+```
+
+- gas_prod : This function takes year as an input and returns the average natural
+gas produced in that year by all the countries combined.
+
+```{r}
+gas_prod(2000)
+```
+
+- coal_prod : This function takes year as an input and returns the average coal 
+produced in that year by all the countries combined.
+
+```{r}
+coal_prod(2000)
+```
+
+- top_oil : This function takes year as an input and returns a table showing
+the top 10 oil producers of that year and the total oil produced by them in that 
+year.
+
+```{r}
+top_oil(2000)
+```
+
+- top_gas : This function takes year as an input and returns a table showing
+the top 10 natural gas producers of that year and the total natural gas produced by them in that year.
+
+```{r}
+top_gas(2000)
+```
+
+- top_coal : This function takes year as an input and returns a table showing
+the top 10 coal producers of that year and the total coal produced by them in that 
+year.
+
+```{r}
+top_coal(2000)
+```
+
+- run_app : This function can be used to launch the shiny app which lets the user
+interactively use the data.
+
+*run_app()*
+
+- shiny_pa : This function launches a parametarized version of the shiny app in 
+which we enter the natural resource whose data we want to choose and then when the 
+shiny app is launched, the user can select the country using the drop down menu and can see the production trend of the given fossil fuel through the years.
+
+*shiny_pa(2000)*
