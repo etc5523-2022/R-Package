@@ -1,3 +1,11 @@
+#' Function to launch shiny app
+#' @description This function launches the shiny app.
+#'
+#' @return This function returns a shiny app created using the data loaded in the
+#' package.
+
+
+
 
 #' @export
 run_app <- function() {
