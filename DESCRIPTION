@@ -1,16 +1,9 @@
 Package: fossil
-Title: Package for the Analysis of the Fossil Fuel Data.
+Title: Package for the Analysis of the Fossil Fuel Data
 Version: 0.0.0.9000
 Authors@R: 
     person("Kumar", "Vatsal", , "kvat0001@student.monash.edu", role = c("aut", "cre"))
-    
-Description: This package can help the user gain information about the fossil fuels mainly 
-*oil*, *natural gas* and *coal*. We can get information about the production, 
-consumption , total reserves of the above mentioned fossil fuels for different 
-countries and of different years. The package also has functions that lets the 
-used find the average production, and also lets the user find about the top 10
-producers of a fossil fuel for a particular year. The package also contains 
-functions to launch the shiny apps which helps the user interactively use the data.
+Description: This package can help user communicate with the fossil fuel data.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: es

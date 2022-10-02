@@ -18,15 +18,13 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(fossil)
-library(tidyverse)
+library(dplyr)
 ```
 
 
 # DESCRIPTION
 
-This package can help the user gain information about the fossil fuels mainly 
-*oil*, *natural gas* and *coal*. We can get information about the production, 
-consumption , total reserves of the above mentioned fossil fuels for different 
+This package can help the user gain information about the fossil fuels mainly *oil*, *natural gas* and *coal*. We can get information about the production, consumption , total reserves of the above mentioned fossil fuels for different 
 countries and of different years. The package also has functions that lets the 
 used find the average production, and also lets the user find about the top 10
 producers of a fossil fuel for a particular year. The package also contains 
