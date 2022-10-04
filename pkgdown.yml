@@ -3,7 +3,7 @@ pkgdown: 2.0.6
 pkgdown_sha: ~
 articles:
   fossil: fossil.html
-last_built: 2022-10-04T07:44Z
+last_built: 2022-10-04T08:39Z
 urls:
   reference: https://etc5523-2022.github.io/rpkg-kvatsal2000/reference
   article: https://etc5523-2022.github.io/rpkg-kvatsal2000/articles
